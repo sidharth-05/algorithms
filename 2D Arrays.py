@@ -4,7 +4,7 @@ import random
 import re
 import sys
 
-
+# Very confusing still not sure how this is working
 
 if __name__ == "__main__":
     arr = []
