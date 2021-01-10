@@ -1,5 +1,16 @@
-num = 0
-for i in range(100):
-    if (i%3==0 or i%5==0):
-        sum = num+i
-        print('sum is :' + str(sum))
+N = int(input())
+DATA = bin(N)
+
+MAXIMUM = 0
+CURRENT = 0
+
+for num in DATA:
+    if num == '1':
+        CURRENT = CURRENT + 1
+    else:
+        MAXIMUM = max(MAXIMUM, CURRENT)
+        CURRENT = 0
+
+print(max(MAXIMUM, CURRENT))
+
+# TasK : Given a base- integer, , convert it to binary (base-). Then find and print the base- integer denoting the maximum number of consecutive 's in 's binary representation. When working with different bases, it is common to show the base as a subscript.
