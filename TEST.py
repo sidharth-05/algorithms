@@ -1,10 +1,9 @@
-N = int(input())
-DATA = bin(N)
+N = input()
 
 MAXIMUM = 0
 CURRENT = 0
 
-for num in DATA:
+for num in int(N):
     if num == '1':
         CURRENT = CURRENT + 1
     else:
